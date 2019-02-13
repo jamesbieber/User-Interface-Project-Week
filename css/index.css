@@ -140,7 +140,14 @@ html {
   height: 100%;
   font-size: 62.5%;
 }
-body {
+.subheader {
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #222222;
+  margin-bottom: 3%;
+}
+.container {
+  margin: 0 auto;
   max-width: 1920px;
   width: 100%;
   height: 100%;
@@ -149,7 +156,7 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
-body .top-header {
+.container .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,18 +164,18 @@ body .top-header {
   width: 100%;
   background-color: #98a4af;
 }
-body .top-header h1 {
+.container .top-header h1 {
   font-weight: 550;
   line-height: 4rem;
   color: #ffffff;
   font-size: 2.3rem;
   margin-left: 10%;
 }
-body .top-header img {
+.container .top-header img {
   height: 45%;
   margin-right: 10%;
 }
-body #header-words {
+.container #header-words {
   width: 100%;
   position: absolute;
   display: flex;
@@ -180,10 +187,92 @@ body #header-words {
   line-height: 7.5rem;
   color: #ffffff;
 }
-body .jumbotron {
+.container .jumbotron {
   width: 100%;
 }
-body .jumbotron img {
-  height: 100%;
+.container .jumbotron img {
   width: 100%;
+}
+.container .main-body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.container .main-body .main-content {
+  width: 98%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+.container .main-body .main-content img,
+.container .main-body .main-content .content {
+  width: 50%;
+}
+.container .main-body .main-content .content-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.container .main-body .main-content .content-item .content {
+  margin-right: 3%;
+}
+.container .main-body .main-content .content-item .content button {
+  margin-top: 5%;
+  width: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 1px solid black;
+  background-color: white;
+}
+.container .main-body .main-content .content-item .content button:hover {
+  color: #ffffff;
+  background-color: #222222;
+}
+.container .main-body .main-content .content-item-reverse {
+  width: 98%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.container .main-body .main-content .content-item-reverse .content {
+  margin-left: 3%;
+}
+.container .main-body .main-content .content-item-reverse .content button {
+  margin-top: 5%;
+  width: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 1px solid black;
+  background-color: white;
+}
+.container .main-body .main-content .content-item-reverse .content button:hover {
+  color: #ffffff;
+  background-color: #222222;
+}
+.container .main-body .projects .subheader {
+  margin-top: 5%;
+}
+.container .main-body .projects .project-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .main-body .projects .project-item img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.container .main-body .projects .project-item img[src="img/home/home-villas-img.png"] {
+  margin-top: 0;
+}
+.container .main-body .projects .project-item h2 {
+  position: absolute;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #D8D8D8;
+  border: 1px solid #ffffff;
 }

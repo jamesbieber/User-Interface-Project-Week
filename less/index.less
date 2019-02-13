@@ -147,7 +147,13 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.subheader {
+  .sub-headers;
+  margin-bottom: 3%;
+}
+
+.container {
+  margin: 0 auto;
   max-width: 1920px;
   width: 100%;
   height: 100%;
@@ -176,23 +182,6 @@ body {
     }
   }
 
-  // .jumbotron {
-  //   max-width: 1920px;
-  //   width: 100%;
-  //   position: relative;
-
-  //   span {
-  //     position: absolute;
-  //     margin: 37% 0 0 9.7%;
-  //     .jumbotron-headers;
-  //   }
-
-  //   img[src="img/home/home-jumbotron.png"] {
-  //     width: 100%;
-  //     height: 96vh;
-  //   }
-  // }
-
   #header-words {
     width: 100%;
     position: absolute;
@@ -207,10 +196,90 @@ body {
     width: 100%;
 
     img {
-      height: 100%;
       width: 100%;
     }
   }
 
+  .main-body {
+    padding-left: 5%;
+    padding-right: 5%;
+  
 
+    .main-content {
+      width: 98%;
+      padding-top: 3%;
+      display: flex;
+      flex-direction: column;
+
+      img, .content {
+        width: 50%;
+      }
+
+      .content-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2%;
+
+        .content {
+          margin-right: 3%;
+
+          button {
+            .button-styles;
+          }
+        }
+      }
+
+      .content-item-reverse {
+        width: 98%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 2%;
+
+        .content {
+          margin-left: 3%;
+
+          button {
+            .button-styles;
+          }
+        }
+      }
+    }
+
+    .projects {
+      .subheader {
+        margin-top: 5%;
+      }
+
+      .project-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 5%;
+        }
+
+        img[src="img/home/home-villas-img.png"] {
+          margin-top: 0;
+        }
+
+        h2 {
+          position: absolute;
+          text-align: center;
+          letter-spacing: 2px;
+          width: 10%;
+          padding-top: 1%;
+          padding-bottom: 1%;
+          background-color: #D8D8D8;
+          border: 1px solid #ffffff;
+        }
+      }
+    }
+
+
+  }
 }
