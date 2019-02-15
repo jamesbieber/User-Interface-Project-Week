@@ -315,3 +315,45 @@ html {
 .container .main-body .projects .project-item .last-p {
   margin-bottom: 5%;
 }
+.container .footer-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #828282;
+}
+.container .footer-area .footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.container .footer-area .footer-content .footer-item h2 {
+  font-weight: regular;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+.container .footer-area .footer-content .footer-item input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1% 0 1% 0;
+  border: none;
+  border: 1px solid;
+  border-radius: 2px;
+  color: gray;
+}
+.container .footer-area .footer-content .footer-item p {
+  font-size: 1.2rem;
+  color: white;
+}
+.container .footer-area .footer-content .footer-item .disclaimer {
+  font-size: 1rem;
+  color: white;
+}
+.container .footer-area p {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: white;
+}
