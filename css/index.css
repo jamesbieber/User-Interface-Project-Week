@@ -262,17 +262,56 @@ html {
   width: 100%;
   margin: 0 auto;
   margin-top: 5%;
+  margin-bottom: 7%;
 }
 .container .main-body .projects .project-item img[src="img/home/home-villas-img.png"] {
   margin-top: 0;
 }
-.container .main-body .projects .project-item h2 {
+.container .main-body .projects .project-item .right-title {
   position: absolute;
   text-align: center;
-  letter-spacing: 2px;
-  width: 10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  font-size: 3rem;
+  letter-spacing: 15px;
+  width: 30%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: #D8D8D8;
   border: 1px solid #ffffff;
+  margin-left: 60%;
+  margin-top: 20%;
+}
+.container .main-body .projects .project-item .right-title-blocks {
+  position: absolute;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 15px;
+  width: 30%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #D8D8D8;
+  border: 1px solid #ffffff;
+  margin-left: 60%;
+  margin-top: 24%;
+}
+.container .main-body .projects .project-item .left-title {
+  position: absolute;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 15px;
+  width: 30%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #D8D8D8;
+  border: 1px solid #ffffff;
+  margin-top: 24.5%;
+}
+.container .main-body .projects .project-item .first-p {
+  margin-bottom: 2%;
+}
+.container .main-body .projects .project-item p {
+  margin: 0 auto;
+  width: 40%;
+}
+.container .main-body .projects .project-item .last-p {
+  margin-bottom: 5%;
 }
