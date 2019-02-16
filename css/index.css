@@ -461,4 +461,19 @@ html {
     margin-top: 2%;
     width: 91%;
   }
+  .container .footer-area {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 3%;
+  }
+  .container .footer-area .footer-content {
+    margin: 0 0 0 4.5%;
+    flex-direction: column;
+  }
+  .container .footer-area .footer-content .footer-item {
+    margin-bottom: 5%;
+  }
+  .container .footer-area .copyright {
+    margin: 0 0 5% 4.5%;
+  }
 }
