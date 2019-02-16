@@ -187,6 +187,12 @@ html {
   line-height: 7.5rem;
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  .container #header-words {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
 .container .jumbotron {
   width: 100%;
 }
@@ -229,7 +235,7 @@ html {
   background-color: #222222;
 }
 .container .main-body .main-content .content-item-reverse {
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -356,4 +362,78 @@ html {
   margin: 0 auto;
   font-size: 1.2rem;
   color: white;
+}
+@media (max-width: 500px) {
+  .container .top-header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-between;
+  }
+  .container .top-header h1 {
+    font-size: 2.5rem;
+  }
+  .container .top-header img {
+    display: block;
+    height: 20px;
+    width: 7%;
+  }
+  .container #header-words {
+    padding-left: 5%;
+    padding-top: 21%;
+  }
+  .container .main-body {
+    padding: 0 0 0 0;
+  }
+  .container .main-body .main-content {
+    width: 100%;
+    padding: 0 5% 0 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .main-body .main-content img,
+  .container .main-body .main-content .content {
+    width: 100%;
+  }
+  .container .main-body .main-content .content-item {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .container .main-body .main-content .content-item .content {
+    margin: 0 0 0 0;
+  }
+  .container .main-body .main-content .content-item .content h2 {
+    margin-top: 5%;
+  }
+  .container .main-body .main-content .content-item .content p {
+    margin-top: 5%;
+  }
+  .container .main-body .main-content .content-item .content .button {
+    margin-bottom: 5%;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .container .main-body .main-content .content-item-reverse {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .container .main-body .main-content .content-item-reverse .content {
+    margin: 0 0 0 0;
+  }
+  .container .main-body .main-content .content-item-reverse .content h2 {
+    margin-top: 5%;
+  }
+  .container .main-body .main-content .content-item-reverse .content p {
+    margin-top: 5%;
+  }
+  .container .main-body .main-content .content-item-reverse .content .button {
+    margin-bottom: 5%;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .container .projects {
+    margin: 0 5% 0 5%;
+  }
+  .container .projects .subheader {
+    margin-bottom: 7%;
+  }
 }
