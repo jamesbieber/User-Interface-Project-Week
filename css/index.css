@@ -277,7 +277,7 @@ html {
   position: absolute;
   text-align: center;
   font-size: 3rem;
-  letter-spacing: 15px;
+  letter-spacing: 1rem;
   width: 30%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -290,7 +290,7 @@ html {
   position: absolute;
   text-align: center;
   font-size: 3rem;
-  letter-spacing: 15px;
+  letter-spacing: 1rem;
   width: 30%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -303,7 +303,7 @@ html {
   position: absolute;
   text-align: center;
   font-size: 3rem;
-  letter-spacing: 15px;
+  letter-spacing: 1rem;
   width: 30%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -476,4 +476,42 @@ html {
   .container .footer-area .copyright {
     margin: 0 0 5% 4.5%;
   }
+}
+.services-page #header-words {
+  padding: 0 0 0 0;
+}
+.services-page #header-words .jumbo-header {
+  margin-top: 15%;
+  margin-left: 9.5%;
+  position: absolute;
+}
+.services-page .services-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% 9.5% 5% 9.5%;
+}
+.services-page .services-content p {
+  margin: 0 auto;
+}
+.services-page .services-content .services-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.services-page .services-content .services-navigation .button {
+  margin-top: 5%;
+  width: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.services-page .services-content .services-navigation .button:hover {
+  color: #ffffff;
+  background-color: #222222;
+}
+.services-page .services-content .services-navigation .button:hover {
+  background-color: #5E9FB9;
 }
