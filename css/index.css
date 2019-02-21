@@ -171,7 +171,7 @@ html {
   font-size: 2.3rem;
   margin-left: 10%;
 }
-.container .top-header img {
+.container .top-header #hamburger {
   height: 45%;
   margin-right: 10%;
 }
@@ -482,14 +482,14 @@ html {
 }
 .services-page #header-words .jumbo-header {
   margin-top: 15%;
-  margin-left: 9.5%;
+  margin-left: 11.5%;
   position: absolute;
 }
 .services-page .services-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5% 9.5% 5% 9.5%;
+  margin: 5% 11.5% 5% 11.5%;
 }
 .services-page .services-content p {
   margin: 0 auto;
@@ -498,7 +498,7 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.services-page .services-content .services-navigation .button {
+.services-page .services-content .services-navigation .service {
   margin-top: 5%;
   width: 20%;
   padding-top: 2%;
@@ -508,10 +508,36 @@ html {
   font-size: 2rem;
   font-weight: bold;
 }
-.services-page .services-content .services-navigation .button:hover {
+.services-page .services-content .services-navigation .service:hover {
   color: #ffffff;
   background-color: #222222;
 }
-.services-page .services-content .services-navigation .button:hover {
+.services-page .services-content .services-navigation .service:hover {
   background-color: #5E9FB9;
+}
+.services-page .services-content .tab-services .tab-content {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.services-page .services-content .tab-services .tab-content h2 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #222222;
+  margin: 5% 0 4% 0;
+}
+.services-page .services-content .tab-services .tab-content .content {
+  display: flex;
+  justify-content: space-between;
+}
+.services-page .services-content .tab-services .tab-content .content .text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.services-page .services-content .tab-services .tab-content .content .text .first-p {
+  margin-bottom: 5%;
+}
+.services-page .services-content .tab-services .toggle {
+  display: flex;
 }
