@@ -530,7 +530,17 @@ html {
 
         &:hover {
           background-color: #5E9FB9;
+          cursor: pointer;
         }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .active-service {
+        background-color: #5E9FB9;
+        color: white;
       }
     }
 
@@ -553,7 +563,7 @@ html {
           .text {
             width: 40%;
             display: flex;
-            flex-direction: column;
+            flex-direction: column;-
 
             .first-p {
               margin-bottom: 5%;

@@ -514,6 +514,14 @@ html {
 }
 .services-page .services-content .services-navigation .service:hover {
   background-color: #5E9FB9;
+  cursor: pointer;
+}
+.services-page .services-content .services-navigation .service:focus {
+  outline: none;
+}
+.services-page .services-content .services-navigation .active-service {
+  background-color: #5E9FB9;
+  color: white;
 }
 .services-page .services-content .tab-services .tab-content {
   display: none;
@@ -535,7 +543,7 @@ html {
   display: flex;
   flex-direction: column;
 }
-.services-page .services-content .tab-services .tab-content .content .text .first-p {
+.services-page .services-content .tab-services .tab-content .content .text - .first-p {
   margin-bottom: 5%;
 }
 .services-page .services-content .tab-services .toggle {
