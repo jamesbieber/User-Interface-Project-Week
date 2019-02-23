@@ -13,8 +13,18 @@
 <body class="container services-page">
 
 	<div class="top-header">
-      <h1>S&J</h1>
-      <img id="hamburger" src="img/nav-hamburger.png"/>
+      <h1 class="nav-name">S&J</h1>
+      <img id="hamburger" src="img/nav-hamburger.png" onclick="openNav()"/>
+
+      <script>
+        function openNav() {
+          let nav = document.querySelector('.overlay');
+          let menu = document.querySelector('#hamburger');
+
+          nav.style.width = "100%";
+        }
+      </script>
+
     </div>
 
     <div id=header-words>
@@ -26,11 +36,34 @@
     </div>
 
     <div class="services-content">
+
+		<div class="overlay">
+          <div class=top-header>
+            <h1 class="nav-name">S&J</h1>
+            <img id="hamburger-close" src="img/nav-hamburger-close.png" onclick="closeNav()">
+
+            <script>
+		        function closeNav() {
+		          let nav = document.querySelector('.overlay');
+		          let menu = document.querySelector('#hamburger-close');
+
+		          nav.style.width = "0%";
+		        }
+      		</script>
+          </div>
+
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>      
+          </div>
+        </div>
+
     	<p>Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Long lasting designs and construction that will withstand the tests of time.</p>
 		
 
 		<div class="services-navigation">
-			<button class="service active-service" data-service="1">Pre-Construction</button>
+			<button class="service" data-service="1">Pre-Construction</button>
 			<button class="service" data-service="2">Construction</button>
 			<button class="service" data-service="3">Design Build</button>
 			<button class="service" data-service="4">Sustainability</button>
