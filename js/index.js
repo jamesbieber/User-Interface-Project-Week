@@ -62,7 +62,7 @@ var services = document.querySelectorAll('.service');
 services = Array.from(services).map(service => new ServiceNav(service));
 services[0].serviceClick();
 
-var menu = document.querySelector('.hamburger');
+var menu = document.querySelector('#hamburger');
 menu = new Menu(menu);
 
 // var navLinks = document.querySelector('.nav-links');

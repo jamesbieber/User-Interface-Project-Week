@@ -19,9 +19,10 @@
       <script>
         function openNav() {
           let nav = document.querySelector('.overlay');
-          let menu = document.querySelector('#hamburger');
+          let topheader = document.querySelector('.top-header');
 
-          nav.style.width = "100%";
+          topheader.style.display = "none";
+          nav.style.height = "100%";
         }
       </script>
 
@@ -44,10 +45,11 @@
 
             <script>
 		        function closeNav() {
-		          let nav = document.querySelector('.overlay');
-		          let menu = document.querySelector('#hamburger-close');
+			        let nav = document.querySelector('.overlay');
+			        let topheader = document.querySelector('.top-header');
 
-		          nav.style.width = "0%";
+	                topheader.style.display = "flex";
+			        nav.style.height= "0%";
 		        }
       		</script>
           </div>

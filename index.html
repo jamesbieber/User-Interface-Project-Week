@@ -21,9 +21,10 @@
       <script>
         function openNav() {
           let nav = document.querySelector('.overlay');
-          let menu = document.querySelector('#hamburger');
+          let topheader = document.querySelector('.top-header');
 
-          nav.style.width = "100%";
+          topheader.style.display = "none";
+          nav.style.height = "100%";
         }
       </script>
 
@@ -50,9 +51,10 @@
             <script>
               function closeNav() {
                 let nav = document.querySelector('.overlay');
-                let menu = document.querySelector('#hamburger-close');
+                let topheader = document.querySelector('.top-header');
 
-                nav.style.width = "0%";
+                topheader.style.display = "flex";
+                nav.style.height = "0%";
               }
             </script>
 
@@ -71,7 +73,14 @@
             <section class="content">
               <h2 class="subheader">Smith & Jones Architects</h2>
               <p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
-              <button class="button">Learn More</button>
+              <button class="button" onclick="redirect()">Learn More</button>
+              
+              <script>
+                function redirect() {
+                  window.location="http://localhost:3000/services.html";
+                }
+              </script>
+
             </section>
             <img src="img/home/home-img-1.png">
           </div>

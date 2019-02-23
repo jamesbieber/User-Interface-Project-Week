@@ -207,8 +207,8 @@ html {
   padding-right: 5%;
 }
 .container .main-body .overlay {
-  height: 100%;
-  width: 0;
+  height: 0%;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -250,9 +250,11 @@ html {
   display: block;
   transition: 0.3s;
 }
-.container .main-body .overlay .nav-links a:hover,
+.container .main-body .overlay .nav-links a:hover {
+  color: #504545;
+}
 .container .main-body .overlay .nav-links a:focus {
-  color: #f1f1f1;
+  color: #504545;
 }
 .container .main-body .main-content {
   width: 98%;
@@ -543,8 +545,8 @@ html {
   margin: 5% 11.5% 5% 11.5%;
 }
 .services-page .services-content .overlay {
-  height: 100%;
-  width: 0;
+  height: 0%;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -586,9 +588,11 @@ html {
   display: block;
   transition: 0.3s;
 }
-.services-page .services-content .overlay .nav-links a:hover,
+.services-page .services-content .overlay .nav-links a:hover {
+  color: #504545;
+}
 .services-page .services-content .overlay .nav-links a:focus {
-  color: #f1f1f1;
+  color: #504545;
 }
 .services-page .services-content p {
   margin: 0 auto;
