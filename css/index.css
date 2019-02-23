@@ -253,7 +253,7 @@ html {
 .container .main-body .overlay .nav-links a:hover {
   color: #504545;
 }
-.container .main-body .overlay .nav-links a:focus {
+.container .main-body .overlay .nav-links a:active {
   color: #504545;
 }
 .container .main-body .main-content {
@@ -591,7 +591,7 @@ html {
 .services-page .services-content .overlay .nav-links a:hover {
   color: #504545;
 }
-.services-page .services-content .overlay .nav-links a:focus {
+.services-page .services-content .overlay .nav-links a:active {
   color: #504545;
 }
 .services-page .services-content p {
