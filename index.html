@@ -1,96 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Home</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Smith & Jones Architects</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
+  <body class="container">
+    <div class="top-header">
+      <h1 class="nav-name">S&J</h1>
+      <img id="hamburger" src="img/nav-hamburger.png" onclick="openNav()" />
+      
+      <script>
+        function openNav() {
+          let nav = document.querySelector('.overlay');
+          let topheader = document.querySelector('.top-header');
 
-	<h1>You got this!  Good luck.</h1>
-
-<!-- Menu Content 
-S&J
-
-Home
-Services
-Contact
--->
+          topheader.style.display = "none";
+          nav.style.height = "100%";
+        }
+      </script>
 
 
-<!-- Home Page Content:
-	
-Integrity,
-Excellence,
-Progress.
+    </div>
 
-Smith & Jones Architects
+    <div id=header-words>
+      <h2 class="jumbo-headers">Integrity,</h2>
+      <h2 class="jumbo-headers">Excellence,</h2>
+      <h2 class="jumbo-headers">Progress.</h2>
+    </div>
 
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
+    <div class="jumbotron">
+      <img src="img/home/home-jumbotron.png">
+    </div>
 
-Learn More
+    <div class=main-body>
+      
+        <div class="overlay">
+          <div class=top-header>
+            <h1 class="nav-name">S&J</h1>
+            <img id="hamburger-close" src="img/nav-hamburger-close.png" onclick="closeNav()">
 
-Futuristic Designs
+            <script>
+              function closeNav() {
+                let nav = document.querySelector('.overlay');
+                let topheader = document.querySelector('.top-header');
 
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
+                topheader.style.display = "flex";
+                nav.style.height = "0%";
+              }
+            </script>
 
-View Designs
 
-Recent Projects
+          </div>
 
-THE VILLAS
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>      
+          </div>
+        </div>
 
-The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
+        <section class="main-content">
+          <div class="content-item">
+            <section class="content">
+              <h2 class="subheader">Smith & Jones Architects</h2>
+              <p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+              <button class="button" onclick="redirect()">Learn More</button>
+              
+              <script>
+                function redirect() {
+                  window.location="http://localhost:3000/services.html";
+                }
+              </script>
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+            </section>
+            <img src="img/home/home-img-1.png">
+          </div>
 
-OUTSKIRTS
+          <div class="content-item-reverse">
+            <section class="content">
+              <h2 class="subheader">Futuristic Designs</h2>
+              <p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+              <button class="button">View Designs</button>
+            </section>
+            <img src="img/home/home-img-2.png">
+          </div>
+        </section>
 
-The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
+        <div class="projects">
+          <h2 class="subheader">Recent Projects</h2>
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+          <section class="project-item">
+            <img src="img/home/home-villas-img.png">
+            <h2 class="right-title">THE VILLAS</h2>
+            <p class="first-p">The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
 
-THE BLOCKS
+            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+          </section>
 
-The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
+          <section class="project-item">
+            <img src="img/home/home-outskirts-img.png">
+            <h2 class="left-title">OUTSKIRTS</h2>
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+            <p class="first-p">The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
 
--->
+            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+          </section>
 
-<!-- FOOTER CONTENT
-Interested in starting a project?  
-Let’s talk:
+          <section class="project-item">
+            <img src="img/home/home-the-blocks-img.png">
+            <h2 class="right-title-blocks">THE BLOCKS</h2>
+            <p class="first-p">The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
+            
+            <p class="last-p">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+          </section>
+        </div>
+    </div>
 
-Enter email
+    <div class="footer-area"> 
 
-We'll never share your email with anyone else.
+      <section class=footer-content>
+        <div class="footer-item">        
+          <h2>Interested in starting a project?</h2>
+          <h2>Let's talk:</h2>
+        
+          <input type="text" name="email" placeholder="Enter email">
+          <p class="disclaimer">We'll never share your email with anyone else.</p>
+        </div>
 
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
+        <div class="footer-item">
+          <h2>New York</h2>
+          <p>123 Lane</p>
+          <p>Suite 100</p>
+          <p>Albany, NY 12345</p>
+          <p>202 555 0144</p>
+        </div>
 
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
+        <div class="footer-item">
+          <h2>Florida</h2>
+          <p>Ocean Drive</p>
+          <p>Suite 201</p>
+          <p>Orlando, FL 22345</p>
+          <p>502 555 0144</p>
+        </div>
 
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
+        <div class="footer-item">
+          <h2>California</h2>
+          <p>Mountain Street</p>
+          <p>Suite 105</p>
+          <p>San Diego, CA 22345</p>
+          <p>702 555 0144</p>
+        </div>
+      </section>
+      
+      <p class="copyright">Copyright © 2018 Smith and Jones</p>
+    </div>
+  </body>
 
-Copyright © 2018 Smith and Jones
--->
-	<script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
